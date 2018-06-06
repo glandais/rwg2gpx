@@ -49,6 +49,7 @@ public class Convert {
         }
         GPX gpx = builder.build();
         GPX.write(gpx, outputFile.toPath());
+        System.out.println("Written " + outputFile.toPath());
     }
 
     private static Track createTrack(List<TrackPoint> trackPoints) {
